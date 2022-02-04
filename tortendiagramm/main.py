@@ -4,10 +4,9 @@ from turtle import *
 def tortendiagramm(werte):
     t = Turtle()
 
-    # Einstellungen
+    # Generelle Einstellungen
     t.speed(10)
     t.pensize(2)
-    t.setheading(90)
 
     # Zuerst den vollen Kreis zeichnen
     t.penup()
@@ -15,7 +14,7 @@ def tortendiagramm(werte):
     t.pendown()
     t.circle(300)
 
-    # In die Mitte des Kreises
+    # In die Mitte des Kreises bewegen
     t.penup()
     t.goto(0, 0)
 
@@ -41,7 +40,7 @@ def tortendiagramm(werte):
         t.write(name, align="center", font=("Arial", 18, "bold"))
 
         # Nochmals in die Mitte des Kreises bewegen und sich um die Hälfte des
-        # ausgerechneten Winkels drehen, sodass der volle Winkel zurückgelegt wurde.
+        # ausgerechneten Winkels drehen, sodass der volle Winkel zurückgelegt wurde
         t.goto(0, 0)
         t.left(winkel / 2)
 
