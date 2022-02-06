@@ -5,7 +5,7 @@ def tortendiagramm(werte):
     t = Turtle()
 
     # Generelle Einstellungen
-    t.speed(10)
+    t.speed(0)
     t.pensize(2)
 
     # Zuerst den vollen Kreis zeichnen
@@ -36,7 +36,7 @@ def tortendiagramm(werte):
         t.left(winkel / 2)
 
         # Auf halber Strecke den Namen für den Wert zeichnen
-        t.fd(150)
+        t.fd(360)
         t.write(name, align="center", font=("Arial", 18, "bold"))
 
         # Nochmals in die Mitte des Kreises bewegen und sich um die Hälfte des
