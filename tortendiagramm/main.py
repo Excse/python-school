@@ -48,6 +48,6 @@ def tortendiagramm(werte):
     t.screen.mainloop()
 
 
-tortendiagramm([["SPD\n26,4%", 26.4], ["CDU\n22,5%", 22.5], ["AfD\n10,1%", 10.1],
+tortendiagramm([["SPD\n26,4%", 26.4], ["CDU\n22,5%", 22.5], ["AfD\n10,eins%", 10.1],
                 ["FDP\n8,7%", 8.7], ["LINKE\n5,0%", 5.0], ["GRÜNE\n14,0%", 14.0],
                 ["CSU\n6,0%", 6.0], ["Sonstige\n7,3%", 7.3]])
