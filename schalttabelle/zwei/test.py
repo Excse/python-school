@@ -14,7 +14,3 @@ class AusfüllenZweiTest(unittest.TestCase):
     @staticmethod
     def test_2():
         schalttabelle_ausfüllen("not(a or not b)")
-
-
-if __name__ == "__main__":
-    unittest.main()

@@ -28,7 +28,3 @@ class SortierTest(unittest.TestCase):
     def test_same(self):
         for i in range(1000):
             self.assertEqual(3, sortiertest(generate_same()))
-
-
-if __name__ == "__main__":
-    unittest.main()

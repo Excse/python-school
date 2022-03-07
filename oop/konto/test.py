@@ -20,7 +20,3 @@ class KontoTest(unittest.TestCase):
 
     def test_abheben_error(self):
         self.konto.abheben(210)
-
-
-if __name__ == "__main__":
-    unittest.main()

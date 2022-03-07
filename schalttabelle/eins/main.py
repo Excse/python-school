@@ -9,9 +9,6 @@ def binärliste(bit):
     # von der "zeilenanzahl" abziehen. Da wir das Präfix nicht benötigen, ziehen wir
     # außerdem zwei Stellen von dem Resultat ab.
     zeichenanzahl = len(bin(zeilenanzahl - 1)) - 2
-    # Gibt die Anzahl der Zeichen der größten Binärzahl aus, welche wir zuvor berechnet
-    # haben.
-    print("Zeichenanzahl der größten Binärzahl:", zeichenanzahl)
 
     # Geht alle Zahlen bis zu dem Maximum "zeilenanzahl" durch.
     for i in range(zeilenanzahl):
@@ -25,12 +22,6 @@ def binärliste(bit):
         # sich die Differenz der Nullen. Z.B. "zeichenanzahl" -> 3, "binärzahl_sauber"
         # -> "01" (len = 2), ergibt eine Differenz von 1.
         anzahl_fehlender_nullen = zeichenanzahl - len(binärzahl_sauber)
-        # Gibt die Binärzahl mit dem Präfix aus.
-        print("Binärzahl:", binärzahl)
-        # Es wird die Binärzahl ohne Präfix ausgegeben.
-        print("Zahl ohne Kennzeichnunbg:", binärzahl_sauber)
-        # Die Anzahl an fehlenden Nullen wird ausgegeben.
-        print("So viele Nullen müssten aufgefüllt werden:", anzahl_fehlender_nullen)
         # Die fehlenden Nullen werden an den Anfang des String angehängt.
         binärzahl_mit_nullen = ("0" * anzahl_fehlender_nullen) + binärzahl_sauber
         # Das Resultat wird in der Liste abgespeichert.

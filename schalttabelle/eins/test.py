@@ -22,7 +22,3 @@ class BinärlisteTest(unittest.TestCase):
         print(ergebnis)
         self.assertEqual(ergebnis, ["000", "001", "010", "011", "100", "101", "110",
                                     "111"])
-
-
-if __name__ == "__main__":
-    unittest.main()

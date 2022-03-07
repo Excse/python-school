@@ -20,7 +20,3 @@ class KreisTest(unittest.TestCase):
 
     def test_umfang(self):
         self.kreis.umfang()
-
-
-if __name__ == "__main__":
-    unittest.main()
